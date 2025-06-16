@@ -1,0 +1,164 @@
+/* --------------------
+   Base Styling
+--------------------- */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #333;
+}
+
+/* --------------------
+   Buttons
+--------------------- */
+
+button {
+    background-color: #dc697a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+}
+
+button:hover {
+    background-color: #FFE9F0;
+    color: #dc697a;
+}
+
+/* --------------------
+   Table Container
+--------------------- */
+
+#table {
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Table Element */
+#table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#table tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+#table tr:hover {
+    background-color: #ffdfea;
+}
+
+#table td {
+    padding: 10px 15px;
+    vertical-align: middle;
+}
+
+#table img {
+    border-radius: 0;
+    width: 60px;
+    height: auto;
+    display: block;
+}
+
+#table h5 {
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    color: #333;
+}
+
+/* --------------------
+   Form Styling
+--------------------- */
+
+form {
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* --------------------
+   Avatar Display
+--------------------- */
+
+#avatarImage img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* --------------------
+   Mobile Tweaks
+--------------------- */
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 10px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    #table td {
+        padding: 8px;
+    }
+
+    #table img {
+        width: 50px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="file"] {
+        font-size: 16px;
+    }
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+#avatarImage img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+}
